@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app allows customers to book a table without login. It uses Devise for the admin staff to access all the booking information. It has a static home page. It makes use of external API data. 
 
 Things you may want to cover:
 

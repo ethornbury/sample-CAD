@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'page/home'
+  devise_for :users
+  #get 'page/home'
+  root to: 'page#home'
   get 'page/contact'
   get 'page/about'
   get 'page/report'
