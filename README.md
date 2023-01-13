@@ -12,11 +12,11 @@ Things you may want to cover:
 
 * Database creation
 
-* Database initialization
+Command used for set up
 
-* How to run the test suite
+* rails g scaffold Employee fname:string lname:string phone:string access:boolean notes:text 
 
-* Services (job queues, cache servers, search engines, etc.)
+* rails g scaffold Event name:string email:string phone:string deposit:boolean numppl:integer notes:text employees:references
 
 * Deployment instructions
 

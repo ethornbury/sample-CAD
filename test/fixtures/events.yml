@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  phone: MyString
+  deposit: false
+  numppl: 1
+  notes: MyText
+  employees: one
+
+two:
+  name: MyString
+  email: MyString
+  phone: MyString
+  deposit: false
+  numppl: 1
+  notes: MyText
+  employees: two

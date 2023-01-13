@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :events
+  resources :employees
   devise_for :users
   #get 'page/home'
   root to: 'page#home'
