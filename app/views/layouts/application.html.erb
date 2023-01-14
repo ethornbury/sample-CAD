@@ -3,6 +3,8 @@
   <head>
     <title>CADapp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- w3schools styles for responsive layout -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,13 +13,12 @@
   </head>
 
   <body>
-    <%#= render 'devise/shared/links' %>
-    <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
-    <%= link_to  "sign out",  destroy_user_session_path, 'data-turbo-method': :delete %>
-    <%= link_to 'Log In', new_user_session_path %>
-    <p>nav here</p>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <!-- partial containing menu format is folder/partialname-->
+    <%= render 'layouts/menulinks' %>
+    <div class="w3-row">
+        
+      <%= yield %>
+   
+    </div>
   </body>
 </html>
