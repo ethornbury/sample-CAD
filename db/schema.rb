@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_13_194503) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_16_085241) do
   create_table "employees", force: :cascade do |t|
     t.string "fname"
     t.string "lname"
@@ -28,10 +28,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_13_194503) do
     t.boolean "deposit"
     t.integer "numppl"
     t.text "notes"
-    t.integer "employees_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["employees_id"], name: "index_events_on_employees_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -46,5 +44,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_13_194503) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "events", "employees", column: "employees_id"
 end

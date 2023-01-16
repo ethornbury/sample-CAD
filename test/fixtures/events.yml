@@ -7,7 +7,6 @@ one:
   deposit: false
   numppl: 1
   notes: MyText
-  employees: one
 
 two:
   name: MyString
@@ -16,4 +15,3 @@ two:
   deposit: false
   numppl: 1
   notes: MyText
-  employees: two

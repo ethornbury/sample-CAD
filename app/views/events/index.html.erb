@@ -1,26 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
+<h1>Events</h1>
 
-<div class="w3-third w3-container w3-dark-grey">
-    <h1>Events</h1>
-</div>
-<div class="w3-third w3-container">
-    <div id="events">
-    <% @events.each do |event| %>
-      <%= render event %>
-      <p>
-        <%= link_to "Show this event", event %>
-      </p>
-    <% end %>
-    </div>
-
-    <%= link_to "New event", new_event_path %>
-
-
-</div>
-<div class="w3-third w3-container">
-    <h2>w3-third</h2>
-    <p>partial here</p>
+<div id="events">
+  <% @events.each do |event| %>
+    <%= render event %>
+    <p>
+      <%= link_to "Show this event", event %>
+    </p>
+  <% end %>
 </div>
 
-
+<%= link_to "New event", new_event_path %>

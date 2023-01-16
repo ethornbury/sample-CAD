@@ -7,7 +7,6 @@ class CreateEvents < ActiveRecord::Migration[7.0]
       t.boolean :deposit
       t.integer :numppl
       t.text :notes
-      t.references :employees, null: false, foreign_key: true
 
       t.timestamps
     end

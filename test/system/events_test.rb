@@ -16,7 +16,6 @@ class EventsTest < ApplicationSystemTestCase
 
     check "Deposit" if @event.deposit
     fill_in "Email", with: @event.email
-    fill_in "Employees", with: @event.employees_id
     fill_in "Name", with: @event.name
     fill_in "Notes", with: @event.notes
     fill_in "Numppl", with: @event.numppl
@@ -33,7 +32,6 @@ class EventsTest < ApplicationSystemTestCase
 
     check "Deposit" if @event.deposit
     fill_in "Email", with: @event.email
-    fill_in "Employees", with: @event.employees_id
     fill_in "Name", with: @event.name
     fill_in "Notes", with: @event.notes
     fill_in "Numppl", with: @event.numppl
